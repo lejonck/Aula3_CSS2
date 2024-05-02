@@ -1,0 +1,38 @@
+.elem_rosa { /*a segunda tarefa a ser feita em cada dia é rosa*/
+    color: #FF50B4;
+    list-style-type: disc; /*deixa a bolinha da lista preenchida*/
+}
+
+
+/*Muda a cor do título (único elemento h1 da página) para branco*/
+h1{
+    color:white;
+}
+
+/*Criamos essa div com as tarefas de cada dia, para usar o display flex e assim inverter seus elementos com flex-direction*/
+.tarefas{
+    display:flex;
+    flex-direction:column-reverse; /*dispõe os elementos em coluna e inverte sua ordem*/
+
+}
+
+body {/* o body de toda a página tera essa cor de fundo*/
+     background-color:  #34D0AD;
+     width: 70%; /*body ocupa 70% do tamanho da tela, alinhado à esquerda*/
+}
+
+#lista_num { /*a lista de números pros dias da semana*/
+     background-color: white; /*cor de funda da lista é branco*/
+     border: 7px solid  #FF50B4;   /*a lista tem uma borda rosa com 7 pixeis*/
+}
+
+
+.lista{
+    display:flex;
+    flex-direction: row; /*organiza os elementos da lista em coluna*/
+    padding:10px; /*distancia entre a borda e o conteúdo é de 7 pixels*/
+}
+
+.dias_semana { /*cada dia da semana enumerado deve ter um padding para que ele fique um pouco mais longe da borda rosa*/
+    padding: 7px;
+}
