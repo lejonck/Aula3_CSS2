@@ -1,0 +1,31 @@
+#header { /*header da página */
+    background-color: #FAECD4; /*background com essa cor*/
+    padding: 33px; /*padding para que a cor ocupe um espaço maior em volta do texto*/
+    margin: 0px; /*sem borda, para que a cor chegue até o elemento abaixo da imagem*/
+    text-align:center; /*centraliza  horizontalmente*/
+}
+
+#imagem { /*imagem do cachorro*/
+    border: 3px dashed black; /*borda cortada preta e com 4 pixeis*/
+    padding: 5px; /*padding para que tenha espaço entre a imagem e a borda*/
+    width:400px;
+    height:400px;
+    margin:20px; /*espaço de 15pixels entre imagem e elementos em volta (header e paragrafo)*/
+}
+
+#paragrafo { /*texto na parte de baixo da página*/  
+    border: 4px solid #FAECD4; /*borda sólida com essa cor*/
+    padding: 5px; /*padding para que o texto não encoste na borda*/
+    height:fit-content;
+    width:fit-content; /*altura e largura do tamanho do conteudo*/
+    text-align: center; /*alinha o texto no centro horizotalmente*/
+
+}
+
+/*Essa div conteudo engloba o paragrafo e a imagem, usamos ela para poder colocar em linha os elementos*/
+.conteudo{
+    display:flex;
+    flex-direction: row; /*elementos do conteudo em linha*/
+    align-items: center; /*alinha elementos horizontalmente*/
+
+}
